@@ -1,0 +1,38 @@
+SELF-CHECK PASSED
+OK       PathFinder.findPath(Node, Map, float, int, float)  [private search loop]
+OK       PathFinder.findPath(PathNavigationRegion, Mob, Set, float, int, float)
+OK       PathFinder.nodeEvaluator (field)
+OK       PathFinder.maxVisitedNodes (field)
+OK       NodeEvaluator.getNeighbors(Node[], Node)
+OK       Node.distanceTo(Node)
+OK       Node.distanceManhattan(Node)
+OK       Node.cameFrom (field)
+OK       Node.g (field)
+OK       Node.closed (field)
+OK       Node.walkedDistance (field)
+OK       Node.costMalus (field)
+OK       Node.x (field)
+OK       Node.y (field)
+OK       Node.z (field)
+OK       Target.updateBest(float, Node)
+OK       Target.getBestNode()
+OK       Target.setReached()
+OK       Path(List, BlockPos, boolean)
+OK       Path.getNodeCount()
+OK       Path.getDistToTarget()
+OK       EntityType.ZOMBIE / IRON_GOLEM / VILLAGER
+
+Declared members of PathFinder in this game version:
+  method private void net.minecraft.world.level.pathfinder.PathFinder.insert(net.minecraft.world.level.pathfinder.Node)
+  method private static double net.minecraft.world.level.pathfinder.PathFinder.lambda$new$0(net.minecraft.world.level.pathfinder.Node)
+  method private net.minecraft.world.level.pathfinder.Node net.minecraft.world.level.pathfinder.PathFinder.pop()
+  method public net.minecraft.world.level.pathfinder.Path net.minecraft.world.level.pathfinder.PathFinder.referenceSearch(net.minecraft.world.level.pathfinder.Node,java.util.Map,float,int,float)
+  method private net.minecraft.world.level.pathfinder.Path net.minecraft.world.level.pathfinder.PathFinder.findPath(net.minecraft.world.level.pathfinder.Node,java.util.Map,float,int,float)
+  method public net.minecraft.world.level.pathfinder.Path net.minecraft.world.level.pathfinder.PathFinder.findPath(net.minecraft.world.level.PathNavigationRegion,net.minecraft.world.entity.Mob,java.util.Set,float,int,float)
+  method private float net.minecraft.world.level.pathfinder.PathFinder.getBestH(net.minecraft.world.level.pathfinder.Node,java.util.Set)
+  method private void net.minecraft.world.level.pathfinder.PathFinder.changeCost(net.minecraft.world.level.pathfinder.Node,float)
+  method private net.minecraft.world.level.pathfinder.Path net.minecraft.world.level.pathfinder.PathFinder.reconstruct(net.minecraft.world.level.pathfinder.Node,net.minecraft.core.BlockPos,boolean)
+  field  private final net.minecraft.world.level.pathfinder.NodeEvaluator net.minecraft.world.level.pathfinder.PathFinder.nodeEvaluator
+  field  private final int net.minecraft.world.level.pathfinder.PathFinder.maxVisitedNodes
+  field  private final net.minecraft.world.level.pathfinder.Node[] net.minecraft.world.level.pathfinder.PathFinder.neighbors
+  field  private final java.util.PriorityQueue net.minecraft.world.level.pathfinder.PathFinder.open

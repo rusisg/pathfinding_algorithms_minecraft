@@ -1,0 +1,33 @@
+// Add this as the LAST line of the template's build.gradle:   apply from: 'pathlab.gradle'
+//
+// Builds one jar per algorithm from the same source code:
+//   ./gradlew clean build -Palgo=BFS          -> build/libs/pathlab-bfs-<version>.jar
+//   ./gradlew clean build -Palgo=DIJKSTRA     -> build/libs/pathlab-dijkstra-<version>.jar
+//   ./gradlew clean build -Palgo=GREEDY_BFS   -> build/libs/pathlab-greedy_bfs-<version>.jar
+//   ./gradlew clean build -Palgo=ASTAR        -> build/libs/pathlab-astar-<version>.jar
+// Each jar has its own mod id and refuses to load together with another PathLab jar.
+
+def pathlabAlgos = ['BFS', 'DIJKSTRA', 'GREEDY_BFS', 'ASTAR']
+def pathlabAlgo = (project.findProperty('algo') ?: 'ASTAR').toString().toUpperCase()
+if (!pathlabAlgos.contains(pathlabAlgo)) {
+    throw new GradleException("-Palgo must be one of ${pathlabAlgos}, got '${pathlabAlgo}'")
+}
+def pathlabBreaks = pathlabAlgos.findAll { it != pathlabAlgo }
+        .collect { "\"pathlab_${it.toLowerCase()}\": \"*\"" }.join(', ')
+def pathlabVersion = project.version.toString()
+
+base { archivesName = "pathlab-${pathlabAlgo.toLowerCase()}" }
+
+processResources {
+    inputs.property 'pathlab_algo', pathlabAlgo
+    inputs.property 'pathlab_version', pathlabVersion
+    // plain text replacement, so it cannot clash with the template's own ${version} handling
+    filesMatching(['fabric.mod.json', 'pathlab-default.properties']) {
+        filter { String line ->
+            if (line.contains('"breaks"')) return '  "breaks": { ' + pathlabBreaks + ' }'
+            line.replace('@ALGO_LOWER@', pathlabAlgo.toLowerCase())
+                .replace('@ALGO@', pathlabAlgo)
+                .replace('@VERSION@', pathlabVersion)
+        }
+    }
+}

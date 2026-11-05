@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "pathlab_@ALGO_LOWER@",
+  "version": "@VERSION@",
+  "name": "PathLab (@ALGO@)",
+  "description": "Replaces the pathfinding of zombies, iron golems and villagers with @ALGO@. Everything else is left to the game.",
+  "environment": "*",
+  "entrypoints": { "main": ["dev.pathlab.PathLabMod"] },
+  "mixins": ["pathlab.mixins.json"],
+  "depends": { "fabricloader": ">=0.18.0", "minecraft": ">=26.1", "java": ">=25" },
+  "breaks": { "pathlab_none": "*" }
+}
