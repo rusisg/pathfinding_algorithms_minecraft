@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "smartpath",
+  "version": "1.0.0+26.3",
+  "name": "SmartPath: Theta* & Villager Workstation Pathfinding",
+  "description": "Replaces vanilla A* ground pathfinding with an Any-Angle Lazy Theta* / Adaptive Octile A* hybrid, indoor workstation target resolution, and anti-stuck penalty memory.",
+  "authors": [
+    "SmartPath Contributors"
+  ],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.smartpath.SmartPathMod"
+    ]
+  },
+  "mixins": [
+    "smartpath.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
