@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "villager-pathbench",
+  "version": "1.0.0",
+  "name": "Villager Pathfinding Benchmark",
+  "description": "Implements and benchmarks 6 pathfinding algorithms (Vanilla, A*, BFS, Dijkstra, Greedy-BFS, and Custom Voxel) for Villager workstation (POI) navigation in Minecraft 26.3.",
+  "authors": [
+    "PathBenchDev"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/example/villager-pathbench"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.pathbench.VillagerPathBenchMod"
+    ]
+  },
+  "mixins": [
+    "villager-pathbench.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

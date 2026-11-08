@@ -1,0 +1,74 @@
+{
+  "stats": {
+    "minecraft:picked_up": {
+      "minecraft:spruce_log": 1,
+      "minecraft:apple": 5,
+      "minecraft:wooden_pickaxe": 1,
+      "minecraft:wooden_axe": 1,
+      "minecraft:oak_planks": 3,
+      "minecraft:birch_sign": 1,
+      "minecraft:jungle_log": 1,
+      "minecraft:dark_oak_log": 1
+    },
+    "minecraft:killed": {
+      "minecraft:zombie": 1,
+      "minecraft:villager": 4
+    },
+    "minecraft:used": {
+      "minecraft:oak_trapdoor": 4,
+      "minecraft:oak_shelf": 6,
+      "minecraft:grass_block": 35,
+      "minecraft:netherrack": 3,
+      "minecraft:netherite_sword": 37,
+      "minecraft:cactus": 5,
+      "minecraft:birch_sign": 15,
+      "minecraft:pig_spawn_egg": 1,
+      "minecraft:red_concrete": 15,
+      "minecraft:oak_boat": 10,
+      "minecraft:wither_rose": 41,
+      "minecraft:honey_block": 17,
+      "minecraft:water_bucket": 19,
+      "minecraft:oak_sign": 8,
+      "minecraft:glass": 54,
+      "minecraft:anvil": 1,
+      "minecraft:fletching_table": 16,
+      "minecraft:gray_concrete": 37,
+      "minecraft:magma_block": 9,
+      "minecraft:sand": 6,
+      "minecraft:sweet_berries": 3,
+      "minecraft:crimson_shelf": 4,
+      "minecraft:snow_block": 1,
+      "minecraft:villager_spawn_egg": 27,
+      "minecraft:powder_snow_bucket": 1,
+      "minecraft:flint_and_steel": 3,
+      "minecraft:lime_concrete": 879,
+      "minecraft:zombie_spawn_egg": 2,
+      "minecraft:oak_door": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 49528,
+      "minecraft:walk_one_cm": 21366,
+      "minecraft:leave_game": 1,
+      "minecraft:walk_under_water_one_cm": 523,
+      "minecraft:mob_kills": 25,
+      "minecraft:boat_one_cm": 49,
+      "minecraft:play_time": 49528,
+      "minecraft:damage_dealt": 2911,
+      "minecraft:jump": 52,
+      "minecraft:time_since_death": 49528,
+      "minecraft:drop": 1,
+      "minecraft:sprint_one_cm": 1462,
+      "minecraft:open_chest": 1,
+      "minecraft:total_world_time": 72549,
+      "minecraft:fly_one_cm": 193640,
+      "minecraft:interact_with_anvil": 1,
+      "minecraft:walk_on_water_one_cm": 1362,
+      "minecraft:crouch_one_cm": 13882,
+      "minecraft:sneak_time": 4341
+    },
+    "minecraft:dropped": {
+      "minecraft:birch_sign": 1
+    }
+  },
+  "DataVersion": 5023
+}

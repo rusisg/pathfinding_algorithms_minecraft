@@ -1,0 +1,4 @@
+/pathfind mode greedy_bfs
+/pathfind mode dijkstra
+/pathfind mode astar
+/pathfind mode greedy_bfs
